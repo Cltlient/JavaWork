@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HelloWo</display-name>
+     <servlet>
+            <servlet-name>userServlet</servlet-name>
+            <servlet-class>com.tarena.tedu.UserServlet</servlet-class>
+     </servlet>
+  
+    <servlet-mapping>
+            <servlet-name>userServlet</servlet-name>
+            <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+            <servlet-name>stu_info</servlet-name>
+            <servlet-class>com.tarena.tedu.StudentServlet</servlet-class>
+     </servlet>
+  
+    <servlet-mapping>
+            <servlet-name>stu_info</servlet-name>
+            <url-pattern>/stu_info</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+            <servlet-name>stu_add</servlet-name>
+            <servlet-class>com.tarena.tedu.AddServlet</servlet-class>
+     </servlet>
+  
+    <servlet-mapping>
+            <servlet-name>stu_add</servlet-name>
+            <url-pattern>/addStudent</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+	    <servlet-name>stu_destroy</servlet-name>
+	    <servlet-class>com.tarena.tedu.DestroyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>stu_destroy</servlet-name>
+	    <url-pattern>/destroyStudent</url-pattern>
+	</servlet-mapping>
+	
+	   <servlet>
+        <servlet-name>stu_edit</servlet-name>
+        <servlet-class>com.tarena.tedu.EditServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>stu_edit</servlet-name>
+        <url-pattern>/editStudent</url-pattern>
+    </servlet-mapping>
+    
+           <servlet>
+        <servlet-name>stu_search</servlet-name>
+        <servlet-class>com.tarena.tedu.SearchServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>stu_search</servlet-name>
+        <url-pattern>/searchStudent</url-pattern>
+    </servlet-mapping>
+</web-app>
